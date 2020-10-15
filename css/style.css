@@ -1,0 +1,38 @@
+body {
+  background: white;
+}
+
+svg {
+  width: 100%;
+}
+
+[id^="terminal_"] {
+  transition: fill 1s, transform 1s;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+[id^="terminal_"]:hover {
+  fill: red;
+  transform: scale(1.2);
+}
+
+[id^="routeline_"] {
+  transition: stroke 1s, stroke-width 1s;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+[id^="routeline_"]:hover {
+  stroke: blue;
+  stroke-width: 10px;
+}
+
+[id^="popup_"] {
+  transition: opacity 0.4s;
+  opacity: 0;
+}
+
+.popup-open {
+  opacity: 1;
+}
