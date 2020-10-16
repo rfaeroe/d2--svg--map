@@ -26,6 +26,7 @@ svg {
 [id^="routeline_"]:hover {
   stroke: blue;
   stroke-width: 10px;
+  animation: pulseLine 1s ease-in-out infinite alternate;
 }
 
 [id^="popup_"] {
@@ -35,4 +36,20 @@ svg {
 
 .popup-open {
   opacity: 1;
+}
+
+.show-route {
+  stroke: blue;
+  stroke-width: 10px;
+  transition: stroke 1s, stroke-width 1s;
+}
+
+@keyframes pulseLine {
+  from {
+    stroke: blue;
+  }
+  to {
+    stroke: blue;
+    stroke-width: 15px;
+  }
 }
