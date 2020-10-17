@@ -24,7 +24,6 @@ svg {
 }
 
 [id^="routeline_"]:hover {
-  stroke: blue;
   stroke-width: 10px;
   animation: pulseLine 1s ease-in-out infinite alternate;
 }
@@ -41,7 +40,8 @@ svg {
 .show-route {
   stroke: blue;
   stroke-width: 10px;
-  transition: stroke 1s, stroke-width 1s;
+
+  animation: pulseLine 1s ease-in-out infinite alternate;
 }
 
 @keyframes pulseLine {
