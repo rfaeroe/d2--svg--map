@@ -24,7 +24,7 @@ svg {
 }
 
 [id^="routeline_"]:hover {
-  stroke-width: 10px;
+  stroke-width: 5px;
   animation: pulseLine 1s ease-in-out infinite alternate;
 }
 
